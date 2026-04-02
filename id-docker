@@ -1,0 +1,3 @@
+docker images    (show the docker name eg . alpine, bash etc..)
+
+docker run -v /:/mnt -it bash chroot /mnt sh

